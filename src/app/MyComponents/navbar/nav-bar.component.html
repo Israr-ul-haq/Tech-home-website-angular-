@@ -1,0 +1,72 @@
+<div id="nav" class="w-full fixed z-50">
+  <nav
+    class="container h-20 px-6 mx-auto w-full z-50 pt-1 top-0 bottom-0 right-0 left-0"
+  >
+    <div class="flex justify-between items-center">
+      <a
+        class="flex items-center font-semibold text-[#474747] gap-3"
+        id="nav-items1"
+      >
+        <img src="../../../assets/Images/logo.svg" class="w-12" />
+        <h2>Tech Home</h2>
+      </a>
+      <div
+        class="w-3/6 pl-[115px] sm:pl-[98px] flex justify-between items-baseline text-white display_none"
+      >
+        <a
+          href="#home"
+          class="text-sm font-semibold border-b active:text-red z-50"
+          >HOME</a
+        >
+        <a href="#services" class="text-sm font-semibold z-50">SERVICES</a>
+        <a href="#projects" class="text-sm font-semibold z-50">PROJECTS</a>
+        <a href="#blogs" class="text-sm font-semibold z-50">BLOGS</a>
+      </div>
+      <div class="nav_display_block nav_display_block">
+        <img
+          src="../../../assets/Images/more.png"
+          class="w-[30px]"
+          (click)="myFunc()"
+        />
+      </div>
+      <div class="mobilemenucontainer nav_display_block">
+        <div class="flex justify-end mr-[20px] mt-[20px]" (click)="myFunc1()">
+          <img src="../../../assets/Images/close.png" class="w-[30px]" />
+        </div>
+        <div class="flex flex-col gap-28 pt-[30px] text-white items-center">
+          <a
+            (click)="myFunc1()"
+            href="#home"
+            class="text-xl font-semibold border-b active:text-red z-50"
+            >HOME</a
+          >
+          <a
+            href="#services"
+            class="text-xl font-semibold z-50"
+            (click)="myFunc1()"
+            >SERVICES</a
+          >
+          <a
+            href="#projects"
+            class="text-xl font-semibold z-50"
+            (click)="myFunc1()"
+            >PROJECTS</a
+          >
+          <a
+            href="#blogs"
+            class="text-xl font-semibold z-50"
+            (click)="myFunc1()"
+            >BLOGS</a
+          >
+        </div>
+      </div>
+
+      <a
+        href="#contactus"
+        class="p-4 text-white border-solid border-[#FFFFFF] border text-xs font-semibold hover:bg-[#5DACBB] hover:border-none hover:text-[#FFFFFF] btn_hover"
+      >
+        LETS TALK
+      </a>
+    </div>
+  </nav>
+</div>

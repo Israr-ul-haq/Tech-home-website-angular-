@@ -12,9 +12,11 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+        
           "options": {
             "outputPath": "dist/website",
             "index": "src/index.html",
+            "extraWebpackConfig": "./webpack.extra.js",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -61,6 +63,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "extraWebpackConfig": "./webpack.extra.js"
+          },
           "configurations": {
             "production": {
               "browserTarget": "website:build:production"
@@ -69,6 +74,7 @@
               "browserTarget": "website:build:development"
             }
           },
+
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

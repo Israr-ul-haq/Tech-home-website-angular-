@@ -29,7 +29,6 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-
     AppRoutingModule,
     RouterModule.forRoot([
       { path: 'home', component: HeroComponent },
